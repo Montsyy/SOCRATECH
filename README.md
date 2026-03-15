@@ -29,8 +29,8 @@ Karena SOCRATECH sepenuhnya dibangun menggunakan *Vanilla web technologies* berb
 
 1. **Clone repository ini**
    ```bash
-   git clone https://github.com/username/socratech.git
-   cd socratech
+   git clone https://github.com/username/SOCRATECH.git
+   cd SOCRATECH
    ```
 
 2. **Jalankan local server**
