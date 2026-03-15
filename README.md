@@ -76,19 +76,5 @@ SOCRATECH menyediakan *mock data* sehingga Anda dapat langsung masuk tanpa menda
   - Email: `ahmad@guru.sch`
   - Akses fitur: Memantau aktivitas, Statistik performa, dll.
 
-## 🤝 Berkontribusi
-
-Kami menyambut berbagai kontribusi baik berupa pelaporan *bug*, usulan fitur baru, hingga _Pull Request_ langsung.
-
-1. Lakukan *Fork* proyek ini
-2. Buat *branch* fitur Anda (`git checkout -b feature/FiturKeren`)
-3. Lakukan *Commit* terhadap perubahan Anda (`git commit -m 'Menambahkan fitur keren'`)
-4. *Push* ke branch Anda (`git push origin feature/FiturKeren`)
-5. Buka *Pull Request*
-
-## 📜 Lisensi
-
-Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih mengikat.
-
 ---
 *Dibuat dengan ❤️ untuk generasi digital Indonesia masa depan.*
