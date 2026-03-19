@@ -4,12 +4,12 @@
     ========================================================================== 
     */
     const USERS = [
-      { id:1, name:'Budi Santoso', role:'student', email:'budi@student.sch', avatar:'BS', color:'#6C3CE1', level:8, xp:7840, xpNext:8500, badges:['quiz_master','socratic_scholar','rising_star'], streak:12, quizScores:92, opinions:23, dialogues:47 },
-      { id:2, name:'Sari Dewi', role:'student', email:'sari@student.sch', avatar:'SD', color:'#00D4FF', level:7, xp:6200, xpNext:7000, badges:['news_analyst','opinion_leader'], streak:8, quizScores:88, opinions:31, dialogues:38 },
-      { id:3, name:'Arif Rahman', role:'student', email:'arif@student.sch', avatar:'AR', color:'#FFB800', level:6, xp:5100, xpNext:6000, badges:['rising_star'], streak:5, quizScores:79, opinions:15, dialogues:29 },
+      { id:1, name:'Budi Santoso', role:'student', email:'budi@student.sch', avatar:'BS', color:'#54AEF7', level:8, xp:7840, xpNext:8500, badges:['quiz_master','socratic_scholar','rising_star'], streak:12, quizScores:92, opinions:23, dialogues:47 },
+      { id:2, name:'Sari Dewi', role:'student', email:'sari@student.sch', avatar:'SD', color:'#FFC338', level:7, xp:6200, xpNext:7000, badges:['news_analyst','opinion_leader'], streak:8, quizScores:88, opinions:31, dialogues:38 },
+      { id:3, name:'Arif Rahman', role:'student', email:'arif@student.sch', avatar:'AR', color:'#FFC338', level:6, xp:5100, xpNext:6000, badges:['rising_star'], streak:5, quizScores:79, opinions:15, dialogues:29 },
       { id:4, name:'Maya Putri', role:'student', email:'maya@student.sch', avatar:'MP', color:'#00E676', level:5, xp:4300, xpNext:5000, badges:['quiz_master'], streak:3, quizScores:85, opinions:19, dialogues:22 },
       { id:5, name:'Reza Hidayat', role:'student', email:'reza@student.sch', avatar:'RH', color:'#FF4D6D', level:4, xp:3100, xpNext:4000, badges:[], streak:2, quizScores:71, opinions:11, dialogues:17 },
-      { id:6, name:'Pak Ahmad', role:'teacher', email:'ahmad@guru.sch', avatar:'PA', color:'#8B5CF6', level:10, xp:9999, xpNext:9999, badges:['quiz_master','socratic_scholar','news_analyst','opinion_leader','rising_star','critical_thinker'], streak:30, quizScores:100, opinions:5, dialogues:120 },
+      { id:6, name:'Pak Ahmad', role:'teacher', email:'ahmad@guru.sch', avatar:'PA', color:'#8ACAF9', level:10, xp:9999, xpNext:9999, badges:['quiz_master','socratic_scholar','news_analyst','opinion_leader','rising_star','critical_thinker'], streak:30, quizScores:100, opinions:5, dialogues:120 },
       { id:7, name:'Bu Fatimah', role:'teacher', email:'fatimah@guru.sch', avatar:'BF', color:'#F59E0B', level:10, xp:9999, xpNext:9999, badges:['quiz_master','news_analyst'], streak:25, quizScores:100, opinions:3, dialogues:95 },
     ];
 
@@ -46,20 +46,20 @@
     ];
 
     const OPINIONS = [
-      { id:1, authorId:1, authorName:'Budi Santoso', authorAvatar:'BS', authorColor:'#6C3CE1', category:'Media Sosial', tag:'Literasi', content:'Menurut saya, media sosial telah mengubah cara kita mengonsumsi berita secara fundamental. Algoritma yang menentukan apa yang kita lihat sebenarnya membatasi sudut pandang kita. Kita perlu sadar bahwa apa yang muncul di feed kita bukan representasi realita yang sesungguhnya.', reactions:{ setuju:24, perlu_dikaji:8, insight:15 }, userReactions:{}, timestamp:'2026-03-14T08:30:00', pinned:true },
-      { id:2, authorId:2, authorName:'Sari Dewi', authorAvatar:'SD', authorColor:'#00D4FF', category:'Hoaks', tag:'Kritis', content:'Hoaks menyebar lebih cepat dari fakta karena secara psikologis kita lebih tertarik pada hal-hal yang mengejutkan dan emosional. Solusinya bukan hanya edukasi literasi media, tapi juga perubahan desain platform untuk memperlambat penyebaran konten yang belum terverifikasi.', reactions:{ setuju:31, perlu_dikaji:12, insight:22 }, userReactions:{}, timestamp:'2026-03-13T14:20:00', pinned:false },
-      { id:3, authorId:3, authorName:'Arif Rahman', authorAvatar:'AR', authorColor:'#FFB800', category:'Teknologi', tag:'AI', content:'AI generatif seperti deepfake dan teks otomatis membuat verifikasi informasi semakin sulit. Sebagai siswa, kita harus belajar tidak hanya memverifikasi isi tapi juga keaslian media itu sendiri. Kemampuan ini akan sangat krusial di masa depan.', reactions:{ setuju:18, perlu_dikaji:5, insight:29 }, userReactions:{}, timestamp:'2026-03-12T10:45:00', pinned:false },
+      { id:1, authorId:1, authorName:'Budi Santoso', authorAvatar:'BS', authorColor:'#54AEF7', category:'Media Sosial', tag:'Literasi', content:'Menurut saya, media sosial telah mengubah cara kita mengonsumsi berita secara fundamental. Algoritma yang menentukan apa yang kita lihat sebenarnya membatasi sudut pandang kita. Kita perlu sadar bahwa apa yang muncul di feed kita bukan representasi realita yang sesungguhnya.', reactions:{ setuju:24, perlu_dikaji:8, insight:15 }, userReactions:{}, timestamp:'2026-03-14T08:30:00', pinned:true },
+      { id:2, authorId:2, authorName:'Sari Dewi', authorAvatar:'SD', authorColor:'#FFC338', category:'Hoaks', tag:'Kritis', content:'Hoaks menyebar lebih cepat dari fakta karena secara psikologis kita lebih tertarik pada hal-hal yang mengejutkan dan emosional. Solusinya bukan hanya edukasi literasi media, tapi juga perubahan desain platform untuk memperlambat penyebaran konten yang belum terverifikasi.', reactions:{ setuju:31, perlu_dikaji:12, insight:22 }, userReactions:{}, timestamp:'2026-03-13T14:20:00', pinned:false },
+      { id:3, authorId:3, authorName:'Arif Rahman', authorAvatar:'AR', authorColor:'#FFC338', category:'Teknologi', tag:'AI', content:'AI generatif seperti deepfake dan teks otomatis membuat verifikasi informasi semakin sulit. Sebagai siswa, kita harus belajar tidak hanya memverifikasi isi tapi juga keaslian media itu sendiri. Kemampuan ini akan sangat krusial di masa depan.', reactions:{ setuju:18, perlu_dikaji:5, insight:29 }, userReactions:{}, timestamp:'2026-03-12T10:45:00', pinned:false },
       { id:4, authorId:4, authorName:'Maya Putri', authorAvatar:'MP', authorColor:'#00E676', category:'Pendidikan', tag:'Sekolah', content:'Pendidikan literasi digital seharusnya dimulai lebih awal. Saat ini banyak teman-teman yang masih langsung percaya screenshot tanpa menelusuri sumbernya. Kita perlu budaya cek fakta yang lebih kuat di kalangan remaja.', reactions:{ setuju:42, perlu_dikaji:3, insight:18 }, userReactions:{}, timestamp:'2026-03-11T16:00:00', pinned:false },
       { id:5, authorId:5, authorName:'Reza Hidayat', authorAvatar:'RH', authorColor:'#FF4D6D', category:'Sosial', tag:'Cyberbullying', content:'Kebebasan berpendapat online sering disalahgunakan untuk menyerang orang lain secara anonim. Anonimitas di internet membuat orang lebih berani berkata kasar. Apakah menghapus anonimitas adalah solusi yang tepat, atau justru akan membahayakan kelompok rentan?', reactions:{ setuju:15, perlu_dikaji:28, insight:11 }, userReactions:{}, timestamp:'2026-03-10T09:15:00', pinned:false },
     ];
 
     const NEWS_TEMPLATES = [
-      { gradient:'linear-gradient(135deg,#1A0A3A,#6C3CE1)', icon:'<i class="ph ph-broadcast"></i>', category:'Teknologi' },
-      { gradient:'linear-gradient(135deg,#0A1A3A,#00D4FF)', icon:'<i class="ph ph-waves"></i>', category:'Lingkungan' },
+      { gradient:'linear-gradient(135deg,#1A0A3A,#54AEF7)', icon:'<i class="ph ph-broadcast"></i>', category:'Teknologi' },
+      { gradient:'linear-gradient(135deg,#0A1A3A,#FFC338)', icon:'<i class="ph ph-waves"></i>', category:'Lingkungan' },
       { gradient:'linear-gradient(135deg,#2A0A1A,#FF4D6D)', icon:'<i class="ph ph-lightning"></i>', category:'Politik' },
       { gradient:'linear-gradient(135deg,#1A2A0A,#00E676)', icon:'<i class="ph ph-plant"></i>', category:'Sosial' },
-      { gradient:'linear-gradient(135deg,#2A1A0A,#FFB800)', icon:'<i class="ph ph-book-open"></i>', category:'Pendidikan' },
-      { gradient:'linear-gradient(135deg,#1A0A2A,#8B5CF6)', icon:'<i class="ph ph-microscope"></i>', category:'Sains' },
+      { gradient:'linear-gradient(135deg,#2A1A0A,#FFC338)', icon:'<i class="ph ph-book-open"></i>', category:'Pendidikan' },
+      { gradient:'linear-gradient(135deg,#1A0A2A,#8ACAF9)', icon:'<i class="ph ph-microscope"></i>', category:'Sains' },
     ];
 
     const DIALOGUE_ROOMS = [
@@ -80,12 +80,12 @@
 
     const SAMPLE_MESSAGES = {
       1: [
-        { id:1, senderId:6, senderName:'Pak Ahmad', senderAvatar:'PA', senderColor:'#8B5CF6', content:'Selamat datang di ruang diskusi. Mari kita mulai dengan pertanyaan pembuka: Menurutmu, apa pengaruh terbesar media sosial terhadap kualitas diskusi demokratis di Indonesia?', timestamp:'09:00', isOwn:false },
-        { id:2, senderId:1, senderName:'Budi Santoso', senderAvatar:'BS', senderColor:'#6C3CE1', content:'Menurut saya, media sosial justru melemahkan demokrasi karena menciptakan echo chamber yang membuat orang hanya berinteraksi dengan yang sepaham saja.', timestamp:'09:05', isOwn:true },
-        { id:3, senderId:0, senderName:'SOCRATECH AI', senderAvatar:'<i class="ph-fill ph-robot"></i>', senderColor:'#FFB800', content:'Apa asumsi yang mendasari pendapatmu tersebut?', timestamp:'09:05', isOwn:false, isSystem:true },
-        { id:4, senderId:2, senderName:'Sari Dewi', senderAvatar:'SD', senderColor:'#00D4FF', content:'Saya setuju soal echo chamber, tapi media sosial juga memberikan platform bagi kelompok yang sebelumnya tidak punya suara. Ini kan positif untuk demokrasi?', timestamp:'09:08', isOwn:false },
-        { id:5, senderId:1, senderName:'Budi Santoso', senderAvatar:'BS', senderColor:'#6C3CE1', content:'Poin yang menarik, Sari! Tapi apakah "memiliki suara" saja cukup jika informasi yang beredar tidak akurat?', timestamp:'09:10', isOwn:true },
-        { id:6, senderId:0, senderName:'SOCRATECH AI', senderAvatar:'<i class="ph-fill ph-robot"></i>', senderColor:'#FFB800', content:'Bisakah kamu memberikan bukti atau contoh konkret yang mendukung klaimmu?', timestamp:'09:10', isOwn:false, isSystem:true },
+        { id:1, senderId:6, senderName:'Pak Ahmad', senderAvatar:'PA', senderColor:'#8ACAF9', content:'Selamat datang di ruang diskusi. Mari kita mulai dengan pertanyaan pembuka: Menurutmu, apa pengaruh terbesar media sosial terhadap kualitas diskusi demokratis di Indonesia?', timestamp:'09:00', isOwn:false },
+        { id:2, senderId:1, senderName:'Budi Santoso', senderAvatar:'BS', senderColor:'#54AEF7', content:'Menurut saya, media sosial justru melemahkan demokrasi karena menciptakan echo chamber yang membuat orang hanya berinteraksi dengan yang sepaham saja.', timestamp:'09:05', isOwn:true },
+        { id:3, senderId:0, senderName:'SOCRATECH AI', senderAvatar:'<i class="ph-fill ph-robot"></i>', senderColor:'#FFC338', content:'Apa asumsi yang mendasari pendapatmu tersebut?', timestamp:'09:05', isOwn:false, isSystem:true },
+        { id:4, senderId:2, senderName:'Sari Dewi', senderAvatar:'SD', senderColor:'#FFC338', content:'Saya setuju soal echo chamber, tapi media sosial juga memberikan platform bagi kelompok yang sebelumnya tidak punya suara. Ini kan positif untuk demokrasi?', timestamp:'09:08', isOwn:false },
+        { id:5, senderId:1, senderName:'Budi Santoso', senderAvatar:'BS', senderColor:'#54AEF7', content:'Poin yang menarik, Sari! Tapi apakah "memiliki suara" saja cukup jika informasi yang beredar tidak akurat?', timestamp:'09:10', isOwn:true },
+        { id:6, senderId:0, senderName:'SOCRATECH AI', senderAvatar:'<i class="ph-fill ph-robot"></i>', senderColor:'#FFC338', content:'Bisakah kamu memberikan bukti atau contoh konkret yang mendukung klaimmu?', timestamp:'09:10', isOwn:false, isSystem:true },
       ]
     };
 
@@ -251,7 +251,7 @@
       const role = window._selectedRole || 'student';
       if (!name || !email) return showToast('error','Error','Lengkapi semua field.');
       const initials = name.split(' ').map(n=>n[0]).join('').slice(0,2).toUpperCase();
-      const colors = ['#6C3CE1','#00D4FF','#FFB800','#00E676','#FF4D6D','#8B5CF6'];
+      const colors = ['#54AEF7','#FFC338','#FFC338','#00E676','#FF4D6D','#8ACAF9'];
       const newUser = { id: Date.now(), name, role, email, avatar: initials, color: colors[Math.floor(Math.random()*colors.length)], level:1, xp:0, xpNext:500, badges:[], streak:0, quizScores:0, opinions:0, dialogues:0 };
       USERS.push(newUser);
       setCurrentUser(newUser);
@@ -278,9 +278,9 @@
       let statsHtml = '';
       if (isTeacher) {
         const stats = [
-          { icon:'<i class="ph-fill ph-users"></i>', color:'rgba(108,60,225,.2)', val:'32', label:'Total Siswa', change:'+5.2%', pos:true },
-          { icon:'<i class="ph-fill ph-notepad"></i>', color:'rgba(0,212,255,.15)', val:'4', label:'Quiz Aktif', change:'2 selesai minggu ini', pos:true },
-          { icon:'<i class="ph-fill ph-chats-circle"></i>', color:'rgba(255,184,0,.15)', val:'186', label:'Pesan Dialog', change:'+23%', pos:true },
+          { icon:'<i class="ph-fill ph-users"></i>', color:'rgba(84, 174, 247,.2)', val:'32', label:'Total Siswa', change:'+5.2%', pos:true },
+          { icon:'<i class="ph-fill ph-notepad"></i>', color:'rgba(255, 195, 56,.15)', val:'4', label:'Quiz Aktif', change:'2 selesai minggu ini', pos:true },
+          { icon:'<i class="ph-fill ph-chats-circle"></i>', color:'rgba(255, 195, 56,.15)', val:'186', label:'Pesan Dialog', change:'+23%', pos:true },
           { icon:'<i class="ph-fill ph-star"></i>', color:'rgba(0,230,118,.15)', val:'84%', label:'Rata-rata Skor', change:'+3.1%', pos:true },
         ];
         statsHtml = stats.map(s => `<div class="stat-card animate-fade-in-up">
@@ -291,9 +291,9 @@
         </div>`).join('');
       } else {
         const stats = [
-          { icon:'<i class="ph-fill ph-target"></i>', color:'rgba(108,60,225,.2)', val:`${ud.quizScores||0}%`, label:'Skor Quiz Rata-rata', change:'+5%', pos:true },
-          { icon:'<i class="ph-fill ph-lightbulb"></i>', color:'rgba(255,184,0,.15)', val:`${ud.opinions||0}`, label:'Opini Dipublikasikan', change:'+3 minggu ini', pos:true },
-          { icon:'<i class="ph-fill ph-chats"></i>', color:'rgba(0,212,255,.15)', val:`${ud.dialogues||0}`, label:'Kontribusi Dialog', change:'+8', pos:true },
+          { icon:'<i class="ph-fill ph-target"></i>', color:'rgba(84, 174, 247,.2)', val:`${ud.quizScores||0}%`, label:'Skor Quiz Rata-rata', change:'+5%', pos:true },
+          { icon:'<i class="ph-fill ph-lightbulb"></i>', color:'rgba(255, 195, 56,.15)', val:`${ud.opinions||0}`, label:'Opini Dipublikasikan', change:'+3 minggu ini', pos:true },
+          { icon:'<i class="ph-fill ph-chats"></i>', color:'rgba(255, 195, 56,.15)', val:`${ud.dialogues||0}`, label:'Kontribusi Dialog', change:'+8', pos:true },
           { icon:'<i class="ph-fill ph-fire"></i>', color:'rgba(255,77,109,.15)', val:`${ud.streak||0}`, label:'Hari Streak Aktif', change:'Pertahankan!', pos:true },
         ];
         statsHtml = stats.map(s => `<div class="stat-card animate-fade-in-up">
@@ -306,7 +306,7 @@
       
       const unlockedBadges = BADGES_DEF.filter(b => (ud.badges||[]).includes(b.id));
       const badgesHtml = unlockedBadges.slice(0,4).map(b => `
-        <div style="display:flex;align-items:center;gap:16px;padding:16px;background:var(--bg-card);border:1px solid rgba(255,184,0,.2);border-radius:var(--radius-md); transition: var(--transition-fast);">
+        <div style="display:flex;align-items:center;gap:16px;padding:16px;background:var(--bg-card);border:1px solid rgba(255, 195, 56,.2);border-radius:var(--radius-md); transition: var(--transition-fast);">
           <span style="font-size:2rem; color: var(--accent);">${b.icon}</span>
           <div><div style="font-weight:700;font-size:.95rem; margin-bottom:4px;">${b.name}</div><div style="font-size:.8rem;color:var(--text-muted)">${b.desc}</div></div>
         </div>`).join('');
@@ -333,7 +333,7 @@
         ${renderSidebar('dashboard')}
         <main class="main-content">
           <div class="page-header animate-fade-in-down">
-            <h1><i class="ph-fill ph-hand-waving" style="color: #FFB800;"></i> Halo, ${user.name.split(' ')[0]}!</h1>
+            <h1><i class="ph-fill ph-hand-waving" style="color: #FFC338;"></i> Halo, ${user.name.split(' ')[0]}!</h1>
             <p>${isTeacher ? 'Selamat datang di dashboard guru. Pantau perkembangan siswa Anda.' : 'Lanjutkan perjalanan belajarmu hari ini!'}</p>
           </div>
           ${!isTeacher ? `
@@ -391,12 +391,12 @@
     */
     function renderLanding() {
       const feats = [
-        { icon:'<i class="ph-fill ph-newspaper-clipping"></i>', color:'#6C3CE1', bg:'rgba(108,60,225,.15)', title:'Smart Visual News Generator', desc:'Ubah berita aktual menjadi infografis visual yang menarik dengan analisis kritis terstruktur.' },
-        { icon:'<i class="ph-fill ph-chats-circle"></i>', color:'#00D4FF', bg:'rgba(0,212,255,.15)', title:'Student Dialogue Space', desc:'Ruang diskusi interaktif dengan panduan pertanyaan Sokratik AI untuk mempertajam argumen.' },
-        { icon:'<i class="ph-fill ph-lightbulb"></i>', color:'#FFB800', bg:'rgba(255,184,0,.15)', title:'Student Opinion Wall', desc:'Platform ekspresi opini siswa dengan sistem reaksi dan kurasi opini terbaik mingguan.' },
+        { icon:'<i class="ph-fill ph-newspaper-clipping"></i>', color:'#54AEF7', bg:'rgba(84, 174, 247,.15)', title:'Smart Visual News Generator', desc:'Ubah berita aktual menjadi infografis visual yang menarik dengan analisis kritis terstruktur.' },
+        { icon:'<i class="ph-fill ph-chats-circle"></i>', color:'#FFC338', bg:'rgba(255, 195, 56,.15)', title:'Student Dialogue Space', desc:'Ruang diskusi interaktif dengan panduan pertanyaan Sokratik AI untuk mempertajam argumen.' },
+        { icon:'<i class="ph-fill ph-lightbulb"></i>', color:'#FFC338', bg:'rgba(255, 195, 56,.15)', title:'Student Opinion Wall', desc:'Platform ekspresi opini siswa dengan sistem reaksi dan kurasi opini terbaik mingguan.' },
         { icon:'<i class="ph-fill ph-notepad"></i>', color:'#00E676', bg:'rgba(0,230,118,.15)', title:'Weekly Mini Quiz', desc:'Kuis mingguan berbasis literasi dengan timer, feedback instan, dan pelacakan progres.' },
         { icon:'<i class="ph-fill ph-trophy"></i>', color:'#FF4D6D', bg:'rgba(255,77,109,.15)', title:'Leaderboard & Badges', desc:'Sistem gamifikasi dengan poin XP, level, dan badge pencapaian untuk motivasi belajar.' },
-        { icon:'<i class="ph-fill ph-microscope"></i>', color:'#8B5CF6', bg:'rgba(139,92,246,.15)', title:'Inkuiri Sokratik Digital', desc:'Model dialog berbasis metode Sokratik untuk membangun kemampuan berpikir kritis mendalam.' },
+        { icon:'<i class="ph-fill ph-microscope"></i>', color:'#8ACAF9', bg:'rgba(139,92,246,.15)', title:'Inkuiri Sokratik Digital', desc:'Model dialog berbasis metode Sokratik untuk membangun kemampuan berpikir kritis mendalam.' },
       ];
       const novelty = [
         { num:'01', title:'Visual News Transformation', desc:'Sistem otomatis transformasi berita keras menjadi visual digital yang mudah dipahami.', tag:'Sistem Baru' },
@@ -583,14 +583,14 @@
                 <span class="badge badge-secondary">Live Preview</span>
               </div>
               <div id="news-preview-container">
-                <div class="news-preview-card" id="news-preview-card" style="background:linear-gradient(135deg,#1A0A3A,#6C3CE1)">
+                <div class="news-preview-card" id="news-preview-card" style="background:linear-gradient(135deg,#1A0A3A,#54AEF7)">
                   <div class="news-card-header">
                     <div class="news-card-meta">
                       <span class="badge badge-primary" id="prev-category" style="background:rgba(0,0,0,.4);border-color:rgba(255,255,255,.2);color:#fff"><i class="ph ph-broadcast"></i> Teknologi</span>
                       <span class="badge badge-secondary" id="prev-perspective" style="background:rgba(0,0,0,.4);border-color:rgba(255,255,255,.2);color:#fff">Netral</span>
                       <span style="font-size:.8rem;color:rgba(255,255,255,.7);font-weight:500;" id="prev-date">${new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'})}</span>
                     </div>
-                    <div style="font-size:3.5rem;margin:16px 0;filter:drop-shadow(0 0 20px rgba(108,60,225,.6)); color:#fff;" id="prev-icon"><i class="ph ph-broadcast"></i></div>
+                    <div style="font-size:3.5rem;margin:16px 0;filter:drop-shadow(0 0 20px rgba(84, 174, 247,.6)); color:#fff;" id="prev-icon"><i class="ph ph-broadcast"></i></div>
                   </div>
                   <div class="news-card-body">
                     <div class="news-card-title" id="prev-title">Judul berita akan muncul di sini...</div>
@@ -777,7 +777,7 @@
       dialogMessages = [...(SAMPLE_MESSAGES[roomId] || [])];
       document.querySelectorAll('[id^=room-btn-]').forEach(el => el.style.background = '');
       const btn = document.getElementById('room-btn-'+roomId);
-      if (btn) btn.style.background = 'rgba(108,60,225,.15)';
+      if (btn) btn.style.background = 'rgba(84, 174, 247,.15)';
       
       document.getElementById('chat-area').innerHTML = `
         <div class="chat-container">
@@ -1267,7 +1267,7 @@
                     <tbody>
                       ${board.map((u,i) => {
                         const isMe = u.id === user.id;
-                        return `<tr style="${isMe?'background:rgba(108,60,225,.1)':''}">
+                        return `<tr style="${isMe?'background:rgba(84, 174, 247,.1)':''}">
                           <td><span class="rank-badge rank-${i<3?i+1:'other'}">${i+1}</span></td>
                           <td><div class="user-cell">
                             <div class="avatar" style="background:${u.color};color:#fff">${u.avatar}</div>
@@ -1284,7 +1284,7 @@
                   </table>
                 </div>
               </div>
-              ${myRank > 0 ? `<div class="card" style="margin-top:20px;padding:20px 24px;border-color:rgba(108,60,225,.4); background:rgba(108,60,225,.05);">
+              ${myRank > 0 ? `<div class="card" style="margin-top:20px;padding:20px 24px;border-color:rgba(84, 174, 247,.4); background:rgba(84, 174, 247,.05);">
                 <div style="display:flex;justify-content:space-between;align-items:center">
                   <span style="color:var(--text-secondary);font-size:.95rem;font-weight:600;">Peringkatmu saat ini</span>
                   <div style="display:flex;align-items:center;gap:14px">
@@ -1359,7 +1359,7 @@
           </div>
           <div class="stats-grid">
             <div class="stat-card animate-fade-in-up">
-              <div class="stat-card-icon" style="background:rgba(108,60,225,.15); color:var(--primary-light);"><i class="ph-fill ph-users"></i></div>
+              <div class="stat-card-icon" style="background:rgba(84, 174, 247,.15); color:var(--primary-light);"><i class="ph-fill ph-users"></i></div>
               <div class="stat-card-value">${students.length}</div>
               <div class="stat-card-label">Total Siswa Aktif</div>
               <div class="stat-card-change positive"><i class="ph-bold ph-trend-up"></i> Semua aktif minggu ini</div>
@@ -1371,13 +1371,13 @@
               <div class="stat-card-change positive"><i class="ph-bold ph-trend-up"></i> +3.2% dari minggu lalu</div>
             </div>
             <div class="stat-card animate-fade-in-up delay-200">
-              <div class="stat-card-icon" style="background:rgba(0,212,255,.15); color:var(--secondary);"><i class="ph-fill ph-chats-circle"></i></div>
+              <div class="stat-card-icon" style="background:rgba(255, 195, 56,.15); color:var(--secondary);"><i class="ph-fill ph-chats-circle"></i></div>
               <div class="stat-card-value">${students.reduce((s,u)=>s+(u.dialogues||0),0)}</div>
               <div class="stat-card-label">Total Kontribusi Dialog</div>
               <div class="stat-card-change positive"><i class="ph-bold ph-trend-up"></i> +18 hari ini</div>
             </div>
             <div class="stat-card animate-fade-in-up delay-300">
-              <div class="stat-card-icon" style="background:rgba(255,184,0,.15); color:var(--accent);"><i class="ph-fill ph-lightbulb"></i></div>
+              <div class="stat-card-icon" style="background:rgba(255, 195, 56,.15); color:var(--accent);"><i class="ph-fill ph-lightbulb"></i></div>
               <div class="stat-card-value">${students.reduce((s,u)=>s+(u.opinions||0),0)}</div>
               <div class="stat-card-label">Total Opini Dipublikasikan</div>
               <div class="stat-card-change positive"><i class="ph-bold ph-trend-up"></i> +7 hari ini</div>
@@ -1468,7 +1468,7 @@
       const particles = Array.from({length:120}, () => ({
         x: Math.random()*canvas.width, y: -20,
         vx: (Math.random()-0.5)*5, vy: Math.random()*4+2,
-        color: ['#6C3CE1','#00D4FF','#FFB800','#00E676','#FF4D6D','#8B5CF6','#fff'][Math.floor(Math.random()*7)],
+        color: ['#54AEF7','#FFC338','#FFC338','#00E676','#FF4D6D','#8ACAF9','#fff'][Math.floor(Math.random()*7)],
         size: Math.random()*10+4, angle: Math.random()*360, spin: (Math.random()-0.5)*8,
         shape: Math.random() > 0.5 ? 'rect' : 'circle'
       }));
@@ -1542,6 +1542,7 @@
         </div>
         <div class="nav-links">${navLinks}</div>
         <div class="nav-actions">
+          <button class="btn btn-ghost btn-icon" onclick="toggleLanguage()" title="Ubah Bahasa / Switch Language" style="font-size:1.1rem; padding:8px; font-weight:800; font-family:var(--font-heading);">${window.currentLang === 'en' ? 'EN' : 'ID'}</button>
           <button class="btn btn-ghost btn-icon" onclick="toggleTheme()" title="Ganti tema" style="font-size:1.3rem; padding:8px;">${themeIcon}</button>
           ${navRight}
           <button class="btn btn-ghost btn-icon" id="sidebar-toggle" style="display:none;font-size:1.4rem; padding:8px;" onclick="toggleSidebar()"><i class="ph-bold ph-list"></i></button>
@@ -1662,3 +1663,296 @@
       else navigate('landing');
       window.addEventListener('resize', renderNavbar);
     });
+    
+
+// Language Management
+const I18N = {
+  "Beranda": "Home",
+  "Fitur": "Features",
+  "Masuk": "Log In",
+  "Daftar Gratis": "Sign Up Free",
+  "Keluar": "Log Out",
+  "Login cepat sebagai:": "Quick login as:",
+  "Akun Siswa": "Student Account",
+  "Akun Guru": "Teacher Account",
+  "Email": "Email",
+  "Password": "Password",
+  "Masuk ke Platform": "Enter Platform",
+  "Daftar": "Register",
+  "Daftar Sebagai": "Register As",
+  "Siswa": "Student",
+  "Guru": "Teacher",
+  "Nama Lengkap": "Full Name",
+  "Buat Akun": "Create Account",
+  "Menu Utama": "Main Menu",
+  "Aksi Cepat": "Quick Actions",
+  "Total Siswa": "Total Students",
+  "Quiz Aktif": "Active Quizzes",
+  "Pesan Dialog": "Dialogue Messages",
+  "Rata-rata Skor": "Average Score",
+  "Skor Quiz Rata-rata": "Avg Quiz Score",
+  "Opini Dipublikasikan": "Published Opinions",
+  "Kontribusi Dialog": "Dialogue Contributions",
+  "Hari Streak Aktif": "Active Streak Days",
+  "Pertahankan!": "Keep it up!",
+  "Selesaikan aktivitas untuk unlock badge!": "Complete activities to unlock badges!",
+  "Mulai Quiz": "Start Quiz",
+  "Badge Diraih": "Earned Badges",
+  "Lihat Semua": "View All",
+  "Aktivitas Siswa Terbaru": "Recent Student Activity",
+  "Buat Quiz Baru": "New Quiz",
+  "Buat Berita Visual": "New Visual News",
+  "Buka Ruang Dialog": "Open Dialogue",
+  "Lihat Statistik": "View Stats",
+  "Ikuti Dialog": "Join Dialogue",
+  "Post Opini": "Post Opinion",
+  "Ambil Quiz": "Take Quiz",
+  "Halo": "Hello",
+  "Statistik Kelas": "Class Stats",
+  "Mulai Sekarang": "Start Now",
+  "Lihat Fitur": "Features",
+  "Daftar sebagai Siswa": "Register as Student",
+  "Daftar sebagai Guru": "Register as Teacher",
+  "Sistem Baru": "New System",
+  "Inovasi Pedagogik": "Pedagogical Innovation",
+  "Ekosistem Sosial": "Social Ecosystem",
+  "Gamifikasi": "Gamification",
+  "Fitur Unggulan": "Key Features",
+  "Semua yang Kamu Butuhkan untuk": "Everything You Need for",
+  "Kebaruan Platform": "Platform Novelty",
+  "Ruang Diskusi": "Dialogue Rooms",
+  "Pilih Ruang Diskusi": "Select Dialogue Room",
+  "Buat Ruang Baru": "Create New Room",
+  "peserta": "participants",
+  "pesan": "messages",
+  "Tulis pendapatmu...": "Write your opinion...",
+  "Kirim": "Send",
+  "Judul Berita": "News Title",
+  "Ringkasan Isi": "Summary",
+  "Kategori": "Category",
+  "Sudut Pandang": "Perspective",
+  "Analisis Kritis Sokratik": "Critical Socratic Analysis",
+  "Sumber Berita": "News Source",
+  "Publikasikan ke Opinion Wall": "Publish to Opinion Wall",
+  "Preview Kartu Berita": "News Card Preview",
+  "Berita Visual Semua Siswa": "All Students Visual News",
+  "Berita Visual Saya": "My Visual News",
+  "Belum Ada Berita Visual": "No Visual News Yet",
+  "Buat berita visualmu yang pertama!": "Create your first visual news!",
+  "Teknologi": "Technology",
+  "Lingkungan": "Environment",
+  "Politik": "Politics",
+  "Pendidikan": "Education",
+  "Sains": "Science",
+  "Sosial": "Social",
+  "Pro": "Pro",
+  "Kontra": "Cons",
+  "Netral": "Neutral",
+  "Kritis": "Critical",
+  "Platform Literasi Digital Gamifikasi": "Gamified Digital Literacy Platform",
+  "Platform Literasi Digital Generasi Z": "Gen Z Digital Literacy Platform",
+  "Belajar Kritis": "Critical Learning",
+  "Lebih Seru": "More Fun",
+  "dengan SOCRATECH": "with SOCRATECH",
+  "Inovasi Platform Literasi Digital Gamifikasi untuk SMA": "Gamified Digital Literacy Platform Innovation for High School",
+  "Siswa Aktif": "Active Students",
+  "Kepuasan Pengguna": "User Satisfaction",
+  "Berpikir Kritis": "Critical Thinking",
+  
+  // Dashboard & Misc
+  "Selamat datang di dashboard guru. Pantau perkembangan siswa Anda.": "Welcome to the teacher dashboard. Monitor your students' progress.",
+  "Lanjutkan perjalanan belajarmu hari ini!": "Continue your learning journey today!",
+  "menuju Level": "to Level",
+  "selesai minggu ini": "completed this wk",
+  "hari": "days",
+  "minggu ini": "this week",
+  "Peringkat Siswa": "Student Rankings",
+  "Minggu Ini": "This Week",
+  "Bulan Ini": "This Month",
+  "Peringkat Anda:": "Your Rank:",
+  "Bersaing secara sehat, raih prestasi, dan tunjukkan kemampuan literasi digitalmu!": "Compete healthily, achieve greatness, and show your digital literacy skills!",
+  "Koleksi Lencana": "Badge Collection",
+  "Lencana Belum Terbuka": "Locked Badges",
+  "Buka lebih banyak aktivitas untuk meraih lencana!": "Complete activities to unlock badges!",
+  "Semua Siswa": "All Students",
+  "Total Guru": "Total Teachers",
+  "Terbaru": "Latest",
+  "Terpopuler": "Popular",
+  "Trending": "Trending",
+  "Ganti tema": "Toggle Theme",
+  "Lihat Semua": "View All"
+,
+
+  // Landing Page Text
+  "Ubah berita aktual menjadi infografis visual yang menarik dengan analisis kritis terstruktur.": "Turn current news into engaging visual infographics with structured critical analysis.",
+  "Ruang diskusi interaktif dengan panduan pertanyaan Sokratik AI untuk mempertajam argumen.": "Interactive discussion room with AI Socratic question guides to sharpen arguments.",
+  "Platform ekspresi opini siswa dengan sistem reaksi dan kurasi opini terbaik mingguan.": "Student opinion expression platform with reaction systems and weekly best opinion curation.",
+  "Kuis mingguan berbasis literasi dengan timer, feedback instan, dan pelacakan progres.": "Literacy-based weekly quiz with timer, instant feedback, and progress tracking.",
+  "Sistem gamifikasi dengan poin XP, level, dan badge pencapaian untuk motivasi belajar.": "Gamified system with XP points, levels, and achievement badges for learning motivation.",
+  "Model dialog berbasis metode Sokratik untuk membangun kemampuan berpikir kritis mendalam.": "Dialogue model based on the Socratic method to build deep critical thinking skills.",
+  "Sistem otomatis transformasi berita keras menjadi visual digital yang mudah dipahami.": "Automated system for transforming hard news into easy-to-understand digital visuals.",
+  "Model dialog digital berbasis metode filsafat Sokratik untuk pendidikan kritis abad 21.": "Digital dialogue model based on Socratic philosophy for 21st-century critical education.",
+  "Ekosistem opini siswa yang terstruktur dengan sistem validasi dan apresiasi peer-to-peer.": "Structured student opinion ecosystem with peer-to-peer validation and appreciation.",
+  "Pendekatan gamifikasi yang mengintegrasikan literasi kritis ke dalam pengalaman belajar menyenangkan.": "Gamified approach integrating critical literacy into a fun learning experience.",
+  "Platform LMS gamifikasi berbasis inkuiri Sokratik dan transformasi visual berita untuk meningkatkan kesadaran kritis siswa SMA.": "Gamified LMS platform based on Socratic inquiry and news visual transformation to enhance high school students' critical awareness.",
+  "Budi naik ke Level 8!": "Budi leveled up to 8!",
+  "Berita Visual Baru Tersedia": "New Visual News Available",
+  "Siswa Aktif Berdiskusi": "Students Actively Discussing",
+  "4 Inovasi yang Membuat": "4 Innovations Making",
+  "Unik": "Unique",
+  "SOCRATECH Unik": "SOCRATECH Unique",
+  "Keunikan platform yang menggabungkan pedagogi Sokratik dengan teknologi modern untuk pengalaman belajar yang belum pernah ada.": "Platform uniqueness combining Socratic pedagogy with modern technology for an unprecedented learning experience.",
+  "Siap Memulai Perjalanan": "Ready to Start Your Journey in",
+  "Bergabung dengan ratusan siswa dan guru yang sudah membuktikan efektivitas SOCRATECH dalam membangun literasi digital.": "Join hundreds of students and teachers who have proven the effectiveness of SOCRATECH in building digital literacy.",
+  "Enam fitur inovatif yang dirancang khusus untuk membangun kemampuan literasi digital dan berpikir kritis siswa SMA.": "Six innovative features specifically designed to build digital literacy and critical thinking skills for high school students.",
+  "Inkuiri Sokratik Digital": "Digital Socratic Inquiry",
+  "Visual News Transformation": "Visual News Transformation",
+  "Student Opinion Ecosystem": "Student Opinion Ecosystem",
+  "Gamified Critical Literacy": "Gamified Critical Literacy",
+  "Smart Visual News Generator": "Smart Visual News Generator",
+  "Student Dialogue Space": "Student Dialogue Space",
+  "Student Opinion Wall": "Student Opinion Wall",
+  "Weekly Mini Quiz": "Weekly Mini Quiz",
+  "Leaderboard & Badges": "Leaderboard & Badges",
+  
+  // Toasts and Popups
+  "Selesaikan tantangan untuk membuka badge ini!": "Complete challenges to unlock this badge!",
+  "Badge Terkunci": "Locked Badge",
+  "Berhasil Masuk": "Successfully Logged In",
+  "Selamat datang kembali": "Welcome back",
+  "Gagal Masuk": "Login Failed",
+  "Email atau password salah.": "Incorrect email or password.",
+  "Akun Terdaftar": "Account Registered",
+  "Silakan login menggunakan akun baru.": "Please log in using your new account.",
+  "Pesan Kosong": "Empty Message",
+  "Tulis sesuatu sebelum mengirim.": "Write something before sending.",
+  "Opini Kosong": "Empty Opinion",
+  "Tulis pendapatmu sebelum mempublish.": "Write your opinion before publishing.",
+  "Opini Berhasil Dipublish": "Opinion Successfully Published",
+  "Terima kasih atas kontribusimu!": "Thank you for your contribution!",
+  "Berita Dipublikasikan": "News Published",
+  "Visual berita berhasil ditambahkan.": "Visual news successfully added.",
+  "Quiz Selesai!": "Quiz Completed!",
+  "Kamu mendapat skor": "You scored",
+  "dan": "and",
+  "Kamu medapatkan badge baru!": "You earned a new badge!",
+  "Jawaban Tersimpan": "Answer Saved",
+  "Lanjutkan ke pertanyaan berikutnya.": "Proceed to the next question.",
+  "Pilih opsi sebelum lanjut.": "Select an option before continuing.",
+  "Terkirim": "Sent",
+  "Belum ada opini.": "No opinions yet.",
+  "Belum ada berita.": "No news yet.",
+  "Semua pesan udah dibaca.": "All messages have been read.",
+  "Selesaikan aktivitas ini untuk mendapat poin.": "Complete this activity to earn points."
+
+,
+
+  // Badges and Additional UI
+  "Selesaikan 10 quiz dengan skor sempurna": "Complete 10 quizzes with a perfect score",
+  "50 kontribusi dalam dialog": "50 dialogue contributions",
+  "Buat 20 berita visual": "Create 20 visual news",
+  "Terima 100 reaksi di Opinion Wall": "Receive 100 reactions on Opinion Wall",
+  "Aktif 7 hari berturut-turut": "Active for 7 consecutive days",
+  "Kumpulkan semua badge lainnya": "Collect all other badges",
+  "Cara Mendapat Badge": "How to Earn Badges",
+  "Diraih!": "Earned!"
+
+};
+
+window.currentLang = localStorage.getItem('local_lang') || 'id';
+
+window.toggleLanguage = function() {
+  window.currentLang = window.currentLang === 'id' ? 'en' : 'id';
+  localStorage.setItem('local_lang', window.currentLang);
+  // Re-render navbar immediately for state switch
+  renderNavbar();
+  location.reload();
+};
+
+window.translateDOM = function(node) {
+  if (window.currentLang === 'id') return; 
+  if (!node) return;
+  
+  if (node.nodeType === Node.TEXT_NODE) {
+    let text = node.nodeValue;
+    if (!text.trim()) return;
+    
+    // Direct Exact Match
+    if (I18N[text.trim()]) {
+      node.nodeValue = text.replace(text.trim(), I18N[text.trim()]);
+      return;
+    }
+    
+    // Partial Match for compound strings avoiding modifying random words
+    let modified = false;
+    // Iterate reverse to match larger phrases first (like "menuju Level" instead of "Level" or similar)
+    const keys = Object.keys(I18N).sort((a,b) => b.length - a.length);
+    for (const idStr of keys) {
+      const enStr = I18N[idStr];
+      if (text.includes(idStr)) {
+        text = text.split(idStr).join(enStr);
+        modified = true;
+      }
+    }
+    if (modified) node.nodeValue = text;
+    
+  } else if (node.nodeType === Node.ELEMENT_NODE) {
+    // DO NOT translate user input text nodes (skip contents, but not placeholders)
+    if (node.classList && (
+        node.classList.contains('chat-bubble-content') || 
+        node.classList.contains('opinion-content') || 
+        node.classList.contains('news-card-summary') ||
+        node.classList.contains('prev-summary') ||
+        node.classList.contains('leaderboard-name') // Example addition for safety
+    )) {
+      return;
+    }
+
+    if (node.tagName === 'INPUT' || node.tagName === 'TEXTAREA') {
+      const placeholder = node.getAttribute('placeholder');
+      if (placeholder) {
+        if (I18N[placeholder.trim()]) {
+          node.setAttribute('placeholder', I18N[placeholder.trim()]);
+        } else {
+            let pText = placeholder;
+            const keys = Object.keys(I18N).sort((a,b) => b.length - a.length);
+            for (const idStr of keys) {
+                pText = pText.split(idStr).join(I18N[idStr]);
+            }
+            node.setAttribute('placeholder', pText);
+        }
+      }
+    } else if (node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE') {
+      const children = Array.from(node.childNodes);
+      for (const child of children) {
+        window.translateDOM(child);
+      }
+    }
+  }
+};
+
+// Initial translation + setup Observer for dynamic changes
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.currentLang === 'id') return;
+    window.translateDOM(document.body);
+    
+    const observer = new MutationObserver((mutations) => {
+      observer.disconnect(); // prevent infinite loops
+      mutations.forEach(m => {
+        if (m.type === 'childList') {
+           m.addedNodes.forEach(node => {
+              if (node.nodeType === Node.ELEMENT_NODE || node.nodeType === Node.TEXT_NODE) {
+                 window.translateDOM(node);
+              }
+           });
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
+    
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+
+// Post-render force check
+setTimeout(() => { if(window.currentLang==='en') window.translateDOM(document.body) }, 50);
+
