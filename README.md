@@ -22,10 +22,13 @@ SOCRATECH dibangun menggunakan teknologi yang ringan dan optimal untuk lingkunga
 - **Logika & Interaktivitas:** Vanilla JavaScript (ES6+)
 - **State Management:** Browser `localStorage` API 
 - **Desain:** Sistem desain UI/UX responsif yang mengusung konsep Neumorphism, Glassmorphism, dan warna-warna vibrant berfokus pada aksesibilitas (Mobile-first approach).
+- 
+Karena SOCRATECH sepenuhnya dibangun menggunakan *Vanilla web technologies* berbasis statis, platform ini sangat mudah untuk dijalankan.
+
+## ☁️ Cara Menjalankan Secara Online
+https://montsyy.github.io/SOCRATECH/
 
 ## ⚙️ Cara Menjalankan Secara Lokal
-
-Karena SOCRATECH sepenuhnya dibangun menggunakan *Vanilla web technologies* berbasis statis, platform ini sangat mudah untuk dijalankan.
 
 1. **Clone repository ini**
    ```bash
