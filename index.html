@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOCRATECH — Platform Literasi Digital Gamifikasi</title>
-  <meta name="description"
-    content="SOCRATECH: Inovasi Platform Literasi Digital Gamifikasi Berbasis Transformasi Visual Berita dan Inkuiri Sokratik untuk Meningkatkan Kesadaran Kritis Siswa SMA">
+  <title>SOCRATECH - Platform Literasi Digital Gamifikasi</title>
+  <meta name="description" content="SOCRATECH: Inovasi Platform Literasi Digital Gamifikasi Berbasis Transformasi Visual Berita dan Inkuiri Sokratik untuk Meningkatkan Kesadaran Kritis Siswa SMA">
   <meta name="theme-color" content="#6C3CE1">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/animations.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -20,23 +22,12 @@
   <div id="toast-container"></div>
 
   <!-- Confetti Canvas -->
-  <canvas id="confetti-canvas"></canvas>
+  <canvas id="confetti-canvas" style="position:fixed; inset:0; pointer-events:none; z-index:9000;"></canvas>
 
   <!-- App Root -->
   <div id="app"></div>
 
-  <!-- Scripts: Data first, then utilities, then pages -->
-  <script src="js/data.js"></script>
-  <script src="js/auth.js"></script>
-  <script src="js/landing.js"></script>
-  <script src="js/dashboard.js"></script>
-  <script src="js/news.js"></script>
-  <script src="js/dialogue.js"></script>
-  <script src="js/opinion.js"></script>
-  <script src="js/quiz.js"></script>
-  <script src="js/leaderboard.js"></script>
-  <script src="js/stats.js"></script>
+  <!-- JavaScript Application -->
   <script src="js/main.js"></script>
 </body>
-
 </html>
