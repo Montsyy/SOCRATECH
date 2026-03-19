@@ -2348,7 +2348,8 @@ select.form-control {
     flex-direction: column;
     align-items: stretch !important;
   }
-  .opinion-form-actions > * {
+
+  .opinion-form-actions>* {
     width: 100% !important;
     max-width: none !important;
   }
@@ -2371,7 +2372,7 @@ select.form-control {
     white-space: nowrap;
   }
 
-  .hover-glow > div:nth-child(2) {
+  .hover-glow>div:nth-child(2) {
     display: none !important;
   }
 }
