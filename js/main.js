@@ -349,7 +349,7 @@
             <div class="xp-labels"><span>Level ${ud.level}</span><span>Level ${(ud.level||1)+1}</span></div>
           </div>` : ''}
           <div class="stats-grid">${statsHtml}</div>
-          <div style="display:grid;grid-template-columns:${isTeacher?'1fr':'1fr 1fr'};gap:32px;margin-bottom:40px">
+          <div class="grid-1-mobile" style="display:grid;grid-template-columns:${isTeacher?'1fr':'1fr 1fr'};gap:32px;margin-bottom:40px">
             <div class="card animate-fade-in-up">
               <div class="card-header"><h3 class="heading-sm" style="display:flex;align-items:center;gap:8px;"><i class="ph-bold ph-lightning"></i> Aksi Cepat</h3></div>
               <div class="card-body" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">${qactHtml}</div>
@@ -532,7 +532,7 @@
             <h1><i class="ph-fill ph-newspaper-clipping" style="color: var(--primary);"></i> Smart Visual News Generator</h1>
             <p>Transformasikan berita aktual menjadi infografis visual dengan analisis kritis terstruktur.</p>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">
+          <div class="grid-1-mobile" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">
             <!-- Form -->
             <div class="card animate-fade-in-left">
               <div class="card-header"><h3 class="heading-sm" style="display:flex;align-items:center;gap:8px;"><i class="ph-bold ph-pencil-simple"></i> Buat Berita Visual</h3></div>
@@ -615,7 +615,7 @@
               <h2 class="heading-sm" style="display:flex;align-items:center;gap:8px;"><i class="ph-bold ph-books"></i> Berita Visual ${isTeacher ? 'Semua Siswa' : 'Saya'}</h2>
               <span class="badge badge-secondary">${myNews.length} berita</span>
             </div>
-            <div id="news-feed" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px">
+            <div class="grid-auto-mobile" id="news-feed" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px">
               ${renderNewsFeed(myNews)}
             </div>
           </div>
@@ -730,7 +730,7 @@
             <h1><i class="ph-fill ph-chats-circle" style="color: var(--secondary);"></i> Student Dialogue Space</h1>
             <p>Ruang diskusi interaktif dengan panduan inkuiri Sokratik untuk mempertajam pemikiran kritis.</p>
           </div>
-          <div style="display:grid;grid-template-columns:320px 1fr;gap:24px;height:calc(100vh - 220px)">
+          <div class="grid-1-mobile" style="display:grid;grid-template-columns:320px 1fr;gap:24px;height:calc(100vh - 220px)">
             <!-- Room List -->
             <div class="card animate-fade-in-left" style="overflow:hidden;display:flex;flex-direction:column">
               <div class="card-header"><h3 class="heading-sm" style="display:flex;align-items:center;gap:8px;"><i class="ph-bold ph-folder"></i> Ruang Diskusi</h3></div>
@@ -868,7 +868,7 @@
             <div class="card-header"><h3 class="heading-sm" style="display:flex;align-items:center;gap:8px;"><i class="ph-bold ph-pencil-simple"></i> Tulis Opini Baru</h3></div>
             <div class="card-body" style="display:flex;flex-direction:column;gap:16px">
               <textarea class="form-control" id="opinion-text" rows="3" placeholder="Bagikan pemikiranmu tentang literasi digital, media sosial, atau isu aktual..."></textarea>
-              <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+              <div class="opinion-form-actions" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
                 <select class="form-control" id="opinion-category" style="width:auto;flex:1;min-width:160px">
                   <option>Media Sosial</option><option>Hoaks</option><option>Teknologi</option>
                   <option>Pendidikan</option><option>Sosial</option><option>Etika Digital</option>
@@ -1020,7 +1020,7 @@
             <p>Uji pemahaman literasi digitalmu setiap minggu dan raih XP untuk naik level!</p>
           </div>
           <div id="quiz-list">
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px">
+            <div class="grid-auto-mobile" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px">
               ${QUIZZES.map(q => {
                 const done = results[q.id];
                 const diff = {Mudah:'badge-success',Sedang:'badge-accent',Sulit:'badge-danger'}[q.difficulty]||'badge-primary';
@@ -1100,7 +1100,7 @@
       const letters = ['A','B','C','D'];
       document.getElementById('quiz-active').innerHTML = `
         <div style="max-width:760px;margin:0 auto">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px">
             <button class="btn btn-ghost btn-sm" onclick="exitQuiz()"><i class="ph-bold ph-arrow-left"></i> Kembali</button>
             <span id="quiz-timer" style="font-size:1rem;color:var(--text-secondary);font-weight:700;display:flex;align-items:center;gap:6px;"><i class="ph-bold ph-timer"></i> --:--</span>
             <span class="badge badge-primary" style="font-size:.85rem;padding:6px 14px;">Soal ${currentQ+1} dari ${total}</span>
@@ -1232,7 +1232,7 @@
             <h1><i class="ph-fill ph-trophy" style="color: var(--danger);"></i> Leaderboard & Achievement</h1>
             <p>Bersaing secara sehat, raih prestasi, dan tunjukkan kemampuan literasi digitalmu!</p>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
+          <div class="grid-1-mobile" style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
             <!-- Leaderboard -->
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
@@ -1620,6 +1620,7 @@
     // Main Router
     function navigate(page, anchor) {
       currentPage = page;
+      localStorage.setItem('socratech_last_page', page);
       sidebarOpen = false;
       const sidebar = document.getElementById('sidebar');
       if (sidebar) sidebar.classList.remove('open');
@@ -1659,8 +1660,13 @@
       initTheme();
       renderNavbar();
       const user = getCurrentUser();
-      if (user) navigate('dashboard');
-      else navigate('landing');
+      const lastPage = localStorage.getItem('socratech_last_page');
+      
+      if (user) {
+        navigate(lastPage || 'dashboard');
+      } else {
+        navigate((lastPage && typeof lastPage === 'string' && lastPage === 'auth') ? 'auth' : 'landing');
+      }
       window.addEventListener('resize', renderNavbar);
     });
     
@@ -1687,6 +1693,7 @@ const I18N = {
   "Menu Utama": "Main Menu",
   "Aksi Cepat": "Quick Actions",
   "Total Siswa": "Total Students",
+  "Total Siswa Aktif": "Total Active Students",
   "Quiz Aktif": "Active Quizzes",
   "Pesan Dialog": "Dialogue Messages",
   "Rata-rata Skor": "Average Score",
@@ -1708,6 +1715,7 @@ const I18N = {
   "Post Opini": "Post Opinion",
   "Ambil Quiz": "Take Quiz",
   "Halo": "Hello",
+  "Halo,": "Hello,",
   "Statistik Kelas": "Class Stats",
   "Mulai Sekarang": "Start Now",
   "Lihat Fitur": "Features",
@@ -1724,6 +1732,7 @@ const I18N = {
   "Pilih Ruang Diskusi": "Select Dialogue Room",
   "Buat Ruang Baru": "Create New Room",
   "peserta": "participants",
+  "Peserta": "Participants",
   "pesan": "messages",
   "Tulis pendapatmu...": "Write your opinion...",
   "Kirim": "Send",
@@ -1745,6 +1754,9 @@ const I18N = {
   "Pendidikan": "Education",
   "Sains": "Science",
   "Sosial": "Social",
+  "Etika Digital": "Digital Ethics",
+  "Media Sosial": "Social Media",
+  "Hoaks": "Hoax",
   "Pro": "Pro",
   "Kontra": "Cons",
   "Netral": "Neutral",
@@ -1758,7 +1770,7 @@ const I18N = {
   "Siswa Aktif": "Active Students",
   "Kepuasan Pengguna": "User Satisfaction",
   "Berpikir Kritis": "Critical Thinking",
-  
+
   // Dashboard & Misc
   "Selamat datang di dashboard guru. Pantau perkembangan siswa Anda.": "Welcome to the teacher dashboard. Monitor your students' progress.",
   "Lanjutkan perjalanan belajarmu hari ini!": "Continue your learning journey today!",
@@ -1766,10 +1778,16 @@ const I18N = {
   "selesai minggu ini": "completed this wk",
   "hari": "days",
   "minggu ini": "this week",
+  "hari ini": "today",
+  "dari minggu lalu": "from last week",
+  "Semua aktif minggu ini": "All active this week",
   "Peringkat Siswa": "Student Rankings",
   "Minggu Ini": "This Week",
   "Bulan Ini": "This Month",
   "Peringkat Anda:": "Your Rank:",
+  "Peringkatmu saat ini": "Your current rank",
+  "dari": "out of",
+  "siswa": "students",
   "Bersaing secara sehat, raih prestasi, dan tunjukkan kemampuan literasi digitalmu!": "Compete healthily, achieve greatness, and show your digital literacy skills!",
   "Koleksi Lencana": "Badge Collection",
   "Lencana Belum Terbuka": "Locked Badges",
@@ -1780,10 +1798,12 @@ const I18N = {
   "Terpopuler": "Popular",
   "Trending": "Trending",
   "Ganti tema": "Toggle Theme",
-  "Lihat Semua": "View All"
-,
+  "Level & XP": "Level & XP",
+  "Detail Per Siswa": "Student Details",
+  "Pantau perkembangan seluruh siswa secara menyeluruh dan real-time.": "Monitor all students' progress comprehensively in real-time.",
+  "Cari siswa...": "Search students...",
 
-  // Landing Page Text
+  // Landing Page Text & Features
   "Ubah berita aktual menjadi infografis visual yang menarik dengan analisis kritis terstruktur.": "Turn current news into engaging visual infographics with structured critical analysis.",
   "Ruang diskusi interaktif dengan panduan pertanyaan Sokratik AI untuk mempertajam argumen.": "Interactive discussion room with AI Socratic question guides to sharpen arguments.",
   "Platform ekspresi opini siswa dengan sistem reaksi dan kurasi opini terbaik mingguan.": "Student opinion expression platform with reaction systems and weekly best opinion curation.",
@@ -1815,10 +1835,55 @@ const I18N = {
   "Weekly Mini Quiz": "Weekly Mini Quiz",
   "Leaderboard & Badges": "Leaderboard & Badges",
   
+  // Specific Page Descriptions & Headers
+  "Transformasikan berita aktual menjadi infografis visual dengan analisis kritis terstruktur.": "Transform current news into visual infographics with structured critical analysis.",
+  "Ruang diskusi interaktif dengan panduan inkuiri Sokratik untuk mempertajam pemikiran kritis.": "Interactive discussion space with Socratic inquiry guide to sharpen critical thinking.",
+  "Ekspresikan pandanganmu tentang isu-isu literasi digital dan dapatkan apresiasi dari sesama.": "Express your views on digital literacy issues and get peer appreciation from others.",
+  "Tulis Opini Baru": "Write New Opinion",
+  "Bagikan pemikiranmu tentang literasi digital, media sosial, atau isu aktual...": "Share your thoughts on digital literacy, social media, or current issues...",
+  "Publikasikan Opini": "Publish Opinion",
+  "Filter:": "Filter:",
+  "Semua": "All",
+  "Dipinkan": "Pinned",
+  "Pilihan Guru": "Teacher's Choice",
+  "Belum Ada Opini": "No Opinions Yet",
+  "Jadilah yang pertama berbagi opini!": "Be the first to share your opinion!",
+  "reaksi": "reactions",
+  "Setuju": "Agree",
+  "Perlu Dikaji": "Needs Review",
+  "Insight": "Insight",
+  "Hapus": "Delete",
+  "Hapus Opini?": "Delete Opinion?",
+  "Opini yang dihapus tidak dapat dikembalikan.": "Deleted opinions cannot be restored.",
+  "Batal": "Cancel",
+  "Uji pemahaman literasi digitalmu setiap minggu dan raih XP untuk naik level!": "Test your digital literacy every week and earn XP to level up!",
+  "Dibuat oleh": "Created by",
+  "Soal": "Question",
+  "soal": "questions",
+  "menit": "minutes",
+  "Selesai": "Completed",
+  "Ulangi": "Repeat",
+  "Ulangi Quiz": "Repeat Quiz",
+  "Daftar Quiz": "Quiz List",
+  "Statistik Quiz": "Quiz Statistics",
+  "Aksi": "Action",
+  "Edit": "Edit",
+  "Soal Berikutnya": "Next Question",
+  "Lihat Hasil": "View Results",
+  "Kembali": "Back",
+  "Klik salah satu ruang di sebelah kiri untuk mulai berdiskusi.": "Click a room on the left to start discussing.",
+  "Masukkan judul berita aktual...": "Enter an actual news title...",
+  "Ringkasan singkat berita (2-3 kalimat)...": "Brief news summary (2-3 sentences)...",
+  "Apa pertanyaan kritis yang diangkat berita ini?": "What critical question does this news raise?",
+  "Kompas, CNN Indonesia, dll...": "Reuters, BBC, CNN, etc...",
+  "Judul berita akan muncul di sini...": "News title will appear here...",
+  "Ringkasan berita akan ditampilkan di sini. Masukkan teks di form sebelah kiri untuk melihat preview.": "News summary will be displayed here. Enter text in the form to see a preview.",
+
   // Toasts and Popups
   "Selesaikan tantangan untuk membuka badge ini!": "Complete challenges to unlock this badge!",
   "Badge Terkunci": "Locked Badge",
   "Berhasil Masuk": "Successfully Logged In",
+  "Berhasil Masuk!": "Successfully Logged In!",
   "Selamat datang kembali": "Welcome back",
   "Gagal Masuk": "Login Failed",
   "Email atau password salah.": "Incorrect email or password.",
@@ -1831,6 +1896,7 @@ const I18N = {
   "Opini Berhasil Dipublish": "Opinion Successfully Published",
   "Terima kasih atas kontribusimu!": "Thank you for your contribution!",
   "Berita Dipublikasikan": "News Published",
+  "Berita Dipublikasikan!": "News Published!",
   "Visual berita berhasil ditambahkan.": "Visual news successfully added.",
   "Quiz Selesai!": "Quiz Completed!",
   "Kamu mendapat skor": "You scored",
@@ -1840,12 +1906,19 @@ const I18N = {
   "Lanjutkan ke pertanyaan berikutnya.": "Proceed to the next question.",
   "Pilih opsi sebelum lanjut.": "Select an option before continuing.",
   "Terkirim": "Sent",
+  "Form kosong": "Empty form",
   "Belum ada opini.": "No opinions yet.",
   "Belum ada berita.": "No news yet.",
   "Semua pesan udah dibaca.": "All messages have been read.",
-  "Selesaikan aktivitas ini untuk mendapat poin.": "Complete this activity to earn points."
-
-,
+  "Selesaikan aktivitas ini untuk mendapat poin.": "Complete this activity to earn points.",
+  "Luar Biasa!": "Outstanding!",
+  "Bagus!": "Good!",
+  "Terus Berlatih!": "Keep Practicing!",
+  "benar": "correct",
+  "Benar!": "Correct!",
+  "Kurang Tepat": "Incorrect",
+  "telah ditambahkan ke akunmu!": "has been added to your account!",
+  "Ditambahkan ke akunmu": "Added to your account",
 
   // Badges and Additional UI
   "Selesaikan 10 quiz dengan skor sempurna": "Complete 10 quizzes with a perfect score",
@@ -1855,8 +1928,9 @@ const I18N = {
   "Aktif 7 hari berturut-turut": "Active for 7 consecutive days",
   "Kumpulkan semua badge lainnya": "Collect all other badges",
   "Cara Mendapat Badge": "How to Earn Badges",
-  "Diraih!": "Earned!"
-
+  "Diraih!": "Earned!",
+  "Achievement Badges": "Achievement Badges",
+  "Leaderboard & Achievement": "Leaderboard & Achievement"
 };
 
 window.currentLang = localStorage.getItem('local_lang') || 'id';
